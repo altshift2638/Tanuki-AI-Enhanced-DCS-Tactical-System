@@ -85,10 +85,6 @@ Multiplayer-safe (Client aircraft ignored)
 Developed by the Tanuki Defense Systems Team
 Special thanks to:
 
-Eagle Dynamics for DCS World API
-
-Ciribob for initial fatigue concepts
-
 Nemeisis community testers
 
 Pro Tip: Watch for Tanuki AI: messages in DCS.log for real-time behavior tracking!
