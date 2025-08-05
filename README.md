@@ -1,6 +1,6 @@
 # Tanuki-AI-Enhanced-DCS-Tactical-System
 Adaptive Tactics System  Dynamic engagement for AI in DCS World 
-Tanuki AI Ultimate 3.0 - DCS World Enhancement Script
+Tanuki AI Ultimate 3.5 - DCS World Enhancement Script
 Advanced lifelike AI for realistic air combat in DCS World 2.9+
 
 ✨ Features
