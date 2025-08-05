@@ -89,6 +89,6 @@ Eagle Dynamics for DCS World API
 
 Ciribob for initial fatigue concepts
 
-ED Forums community testers
+Nemeisis community testers
 
 Pro Tip: Watch for Tanuki AI: messages in DCS.log for real-time behavior tracking!
