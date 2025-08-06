@@ -89,4 +89,6 @@ Special thanks to:
 
 Nemeisis community testers
 
+Join Nemesis here https://discord.gg/PE5QW4eKMp F14 F15 F16 F18 AV8b welcome 
+
 Pro Tip: Watch for Tanuki AI: messages in DCS.log for real-time behavior tracking!
