@@ -1,94 +1,122 @@
-V4.0 in testing parts of script are being ajusted after feedback to give a even more real feeling AI 
+🧠 Tanuki AI Enhanced DCS Tactical System v4.0
+⚡ Adaptive Tactics | 🛡️ Enhanced Defense | 😴 Fatigue System
+A complete, self-contained Lua script that transforms DCS AI into reactive, tactical, and realistic combatants — no external dependencies required.
 
-# Tanuki-AI-Enhanced-DCS-Tactical-System
-Adaptive Tactics System  Dynamic engagement for AI in DCS World 
-Tanuki AI Ultimate 3.5 - DCS World Enhancement Script
-Advanced lifelike AI for realistic air combat in DCS World 2.9+
+📜 Overview
+Tanuki AI v4.0 brings advanced situational awareness, adaptive behaviors, and realistic combat fatigue to AI pilots in DCS World. Designed for both SP and MP missions, this script upgrades standard AI behavior with features usually reserved for human pilots.
 
-✨ Features
-Adaptive Tactics System
+🚀 Features
+🎯 Tactical Awareness: Dynamic profile switching (e.g., BVR, dogfight, ground attack) based on threat range and aircraft role.
 
-Dynamic engagement profiles (BVR, dogfight, ground attack) based on threat analysis
+🛡️ Advanced Defensive Systems:
 
-Role-specific behaviors (Interceptors, CAS, SEAD, etc.)
+Evasive maneuvers: Beam, notch, corkscrew, etc.
 
-Skill-based ROE (Rules of Engagement) adjustments
+Customizable countermeasure profiles.
 
-Human-Like Fatigue
+ECM battery management (active, passive, depleted).
 
-Pilots accumulate fatigue during combat
+🔀 Adaptive Engagement:
 
-Reduced awareness/performance at high fatigue levels
+Adjusts ROE based on threat levels, pilot fatigue, and fuel state.
 
-Recovery during low-threat periods
+Handles hesitation, fallback, RTB logic.
 
-Threat Assessment Engine
+👨‍✈️ Pilot Personalization:
 
-Real-time enemy distance/altitude analysis
+Role-based skill assignment (Fighter, CAS, Bomber, SEAD, etc.).
 
-Threat decay and "combat stress" simulation
+Skill ranges and randomized variance for realism.
 
-Proximity-triggered evasion maneuvers (notch/beam/terrain)
+🪫 Fuel & ECM State Simulation:
+AI will RTB or change tactics when low on fuel or ECM is drained.
 
-Pilot Skill Variation
+📉 Fatigue System:
 
-Aircraft-type specific skill ranges (Fighter: 65-98%, Bomber: 45-88%, etc.)
+Tracks time in combat, recovers during lulls.
 
-Randomized hesitation and decision delays
+Impacts radar use, countermeasures, and performance.
 
-Skill degradation under fatigue
+🧑‍🤝‍🧑 Wingman Coordination:
 
-DCS 2.9+ Compatibility
+Wingman disengage logic.
 
-Modern event handlers
+Formation management and damage response.
 
-Coalition-aware targeting
+🌙 Environmental Awareness:
 
-Full API integration
+Night behavior adjustments.
 
-⚙️ Installation
-Save as Tanuki AI Ultimate 3.0.lua in Scripts folder
+Weapon preference shifts based on visibility.
 
-Add to missionInit.lua:
-dofile(lfs.writedir()..[[Scripts\Tanuki AI Ultimate 3.0.lua]])  
+📡 DCS 2.9 Compatible Event Handler:
 
-No further configuration needed - Automatically activates for all aircraft
+Automatically hooks into unit birth, crash, hit, and death.
 
-🛠️ Configuration (Optional)
-Adjust in-file constants for tuning:
--- Aggression presets (ROE values)  
-AGGRESSION_LEVELS = { 
-  ACE = {reaction=3, maneuver=3, roe=0}, -- 0=Weapon Free 
-  ROOKIE = {reaction=1, maneuver=1, roe=2} -- 2=Return Fire 
-} 
+📂 Installation
+Download or clone this repository.
 
--- Fatigue rates (per minute)  
-FATIGUE_FACTORS = { 
-  COMBAT = 0.15,    -- High stress 
-  PATROL = 0.03,    -- Routine 
-  RECOVERY = 0.20   -- Rest rate 
-} 
+Copy the file Tanuki AI Enhanced DCS Tactical System 4.0.lua into your mission folder or scripting environment.
 
-🎮 Behavior Examples
-Situation	AI Response
-Enemy at 30km	BVR engagement (radar missiles)
-Enemy <5km	Aggressive dogfight (guns/countermeasures)
-Low-altitude CAS	Terrain masking + flare spam
-Prolonged combat	Reduced radar usage + hesitation
-10+ minutes fighting	Critical fatigue (50% skill reduction)
-⚠️ Compatibility
-DCS World 2.9+ (Tested on OpenBeta)
+Add this line to your mission script or init file:
 
-All aircraft modules (Detects type automatically)
+lua
+Copy
+Edit
+dofile("Tanuki AI Enhanced DCS Tactical System 4.0.lua")
+Script auto-initializes after 10 seconds, applying to all AI aircraft (BLUE and RED, planes and helicopters).
 
-Multiplayer-safe (Client aircraft ignored)
+🧠 How It Works
+Every AI aircraft is assigned:
 
-📜 Credits
-Developed by the Tanuki Defense Systems Team
-Special thanks to:
+A tactical profile (CAS, SEAD, Interceptor, etc.)
 
-Nemeisis community testers
+A skill level affecting their combat decisions
 
-Join Nemesis here https://discord.gg/PE5QW4eKMp F14 F15 F16 F18 AV8b welcome 
+A fatigue score, updated dynamically
 
-Pro Tip: Watch for Tanuki AI: messages in DCS.log for real-time behavior tracking!
+AI will:
+
+Change tactics in response to nearby threats
+
+Use ECM and countermeasures intelligently
+
+Break formation if wingmen are damaged
+
+RTB on low fuel or critical damage
+
+📈 Example Use Case
+Add the script to a PvE mission
+
+Spawn AI dynamically via triggers or scripting
+
+Watch AI pilots fight smart, react to missile threats, and disengage intelligently
+
+✅ Requirements
+DCS World 2.9 or later
+
+Works in both SP and MP environments
+
+No external dependencies (MOOSE, Mist, etc. not required)
+
+🛠️ Customization
+You can tweak behavior by modifying constants inside the script:
+
+AGGRESSION_LEVELS — ROE and maneuvering
+
+PILOT_SKILLS — Skill ranges per role
+
+FATIGUE_FACTORS — Fatigue rates
+
+TACTICAL_PROFILES — Engagement logic per role
+
+DEFENSIVE_PROFILES — Evasive tactics and countermeasures
+
+📜 License
+This script is released under the MIT License. See LICENSE for details.
+
+🙏 Credits
+Developed by TanukiInfosec
+Special thanks to the Nemesis community for inspiration and testing support.
+
+Join Nemesis here https://discord.gg/PE5QW4eKMp F14 F15 F16 F18 AV8b welcome
