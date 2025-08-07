@@ -2,6 +2,8 @@
 ⚡ Adaptive Tactics | 🛡️ Enhanced Defense | 😴 Fatigue System
 A complete, self-contained Lua script that transforms DCS AI into reactive, tactical, and realistic combatants — no external dependencies required.
 
+Join my discord https://discord.gg/p7SFKrUDfP
+
 📜 Overview
 Tanuki AI v4.0 brings advanced situational awareness, adaptive behaviors, and realistic combat fatigue to AI pilots in DCS World. Designed for both SP and MP missions, this script upgrades standard AI behavior with features usually reserved for human pilots.
 
