@@ -118,5 +118,3 @@ This script is released under the MIT License. See LICENSE for details.
 🙏 Credits
 Developed by TanukiInfosec
 Special thanks to the Nemesis community for inspiration and testing support.
-
-Join Nemesis here https://discord.gg/PE5QW4eKMp F14 F15 F16 F18 AV8b welcome
