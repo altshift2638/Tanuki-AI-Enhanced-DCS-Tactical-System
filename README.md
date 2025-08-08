@@ -1,3 +1,16 @@
+4.2 
+ ADDED: Threat scoring system (weapon load, posture, proximity, altitude)
+ ADDED: Tactical retreat, repositioning, and break-off decisions
+ ADDED: Wingman role assignment (cover/support/disengage)
+ ADDED: Energy-aware dogfighting behavior (yo-yo, vertical break)
+ ADDED: RTB triggers (low fuel, no ammo, outnumbered, damage)
+ ADDED: SAM zone avoidance behavior (WIP logic with known threats)
+ ADDED: AI help requests when overwhelmed (calls nearest AI units)
+ ADDED: Fatigue-based errors (slow flares, bad radar use)
+ ADDED: Communication lag simulation for realism (0.5–2.0s delay)
+ REFACTORED: AdaptiveTactics() now handles better human-like hesitation
+====================================================================
+
 🧠 Tanuki AI Enhanced DCS Tactical System v4.0
 ⚡ Adaptive Tactics | 🛡️ Enhanced Defense | 😴 Fatigue System
 A complete, self-contained Lua script that transforms DCS AI into reactive, tactical, and realistic combatants — no external dependencies required.
